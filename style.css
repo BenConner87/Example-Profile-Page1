@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Roboto+Mono:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: black;
+    line-height: 1.4;
+    width: 100%;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.background-stretch {
+    width: 100%;
+    height: auto;
+    opacity: .75;
+}
+
+#background-right {
+    position: absolute;
+    width: 107%;
+    height: 110%;
+    left: 250px;
+    top: 670px;
+    z-index: -1;
+}
+
+.background-right-stretch {
+    width: 75%;
+    height: 95%;
+    opacity: .75;
+}
+
+.header-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 200px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 0vw;
+    z-index: 2;
+}
+
+.header-title {
+    grid-column: 1;;
+    grid-row: 1;
+    text-align: right;
+    font-size: 20px;
+    color: rgb(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.header-quote {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 15px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    z-index: 2;
+    color: rgb(255, 255, 255, 0.8);;
+}
+
+#navbar {
+    position: fixed;
+    height: 100%;
+    min-width: 250px;
+    width: 250px;
+    top: 0px;
+    left: 0px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 75px 0px;
+    
+}
+
+#navbar header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 5px 0px;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#main-doc {
+    position: absolute;
+    top: 650px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+section {
+    background: rgb(230,255,255,0.2);
+    padding: 2.5rem 2.5rem;
+    border-radius: 2rem;
+    width: 500px;
+    margin: auto;
+}
+
+section header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+.youtube-end {
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#m {
+    margin-left: 600px;
+}
+
+#sc {
+    margin-left: 600px;
+}
+
+code {
+    color: rgb(178, 223, 238);
+}
+
+@media only screen and (max-width: 800px;) {
+    
+    #logo {
+        position: absolute;
+        height: auto;
+        min-width: 300px;
+        width: 300px;
+        top: 10px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    #navbar {
+        position: absolute;
+        max-height: 300px;
+        max-width: 300px;
+        width: 300px;
+        top: 0px;
+        left: 0px;
+        z-index: ;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+
+    .header-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 18vw;
+        left: 300px;
+        z-index: 2;
+    }
+}
+
